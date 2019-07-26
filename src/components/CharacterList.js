@@ -22,12 +22,12 @@ export default function CharacterList() {
 
   return <section className='character-list grid-view'>
 
-    <h2>{data.map(e => {
+    <div className="flexCard">{data.map(e => {
       return (
         <CharacterCard key={e} data={e} />
       )
     })
-    }</h2>
+    }</div>
   </section>
 
 }

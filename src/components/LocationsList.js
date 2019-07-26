@@ -24,12 +24,12 @@ export default function LocationList() {
 
     return <section>
 
-        <h2>{data.map(e => {
+        <div className="flexCard">{data.map(e => {
             return (
                 <LocationCard key={e} data={e} />
             )
         })
-        }</h2>
+        }</div>
     </section>
 
 }

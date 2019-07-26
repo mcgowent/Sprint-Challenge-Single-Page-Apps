@@ -6,13 +6,15 @@ export default function LocationCard(props) {
   //{ name, type, dimension, residents }
 
   return (
-    <Card>
-      <Card.Content header={props.data.name} />
-      <Card.Content description={props.data.type} />
-      <Card.Content extra>
-        <Icon name='user' />
-        {props.data.residents.length}
-      </Card.Content>
-    </Card>
+    <div className="card">
+      <Card>
+        <Card.Content header={props.data.name} />
+        <Card.Content description={props.data.type} />
+        <Card.Content extra>
+          <Icon name='user' />
+          {props.data.residents.length}
+        </Card.Content>
+      </Card>
+    </div>
   )
 }

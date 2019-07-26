@@ -6,14 +6,16 @@ export default function EpisodesCard(props) {
     //{ name, type, dimension, residents }
 
     return (
-        <Card>
-            <Card.Content header={props.data.name} />
-            <Card.Content description={props.data.episode} />
+        <div className="card">
+            <Card>
+                <Card.Content header={props.data.name} />
+                <Card.Content description={props.data.episode} />
 
-            <Card.Content extra>
-                <Icon name='user' />
-                Cast: {props.data.characters.length}
-            </Card.Content>
-        </Card>
+                <Card.Content extra>
+                    <Icon name='user' />
+                    Cast: {props.data.characters.length}
+                </Card.Content>
+            </Card>
+        </div>
     )
 }

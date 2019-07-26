@@ -24,12 +24,12 @@ export default function EpisodesList() {
 
     return <section>
 
-        <h2>{data.map(e => {
+        <div className="flexCard">{data.map(e => {
             return (
                 <EpisodesCard key={e} data={e} />
             )
         })
-        }</h2>
+        }</div>
     </section>
 
 }

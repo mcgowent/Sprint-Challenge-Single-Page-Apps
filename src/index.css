@@ -27,6 +27,15 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
+
+.flexCard {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.card {
+  margin: 10px;
+}
 /*
 .main-img {
   display: block;
