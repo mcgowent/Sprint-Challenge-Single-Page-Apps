@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
+import 'semantic-ui-css/semantic.min.css'
+
+import CharacterCard from "./CharacterCard"
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -16,10 +19,15 @@ export default function CharacterList() {
       })
       .catch(err => { return ('nothing', err) })
   }, [data])
-  const tempArray = data.map(e => e)
+
   return <section className='character-list grid-view'>
 
-    <h2>{tempArray.name}</h2>
+    <h2>{data.map(e => {
+      return (
+        <CharacterCard key={e} data={e} />
+      )
+    })
+    }</h2>
   </section>
 
 }

@@ -72,6 +72,7 @@ Follow each part and be sure to use your design/style skills to make this applic
 Construct a Single Page Application with React incorporating multiple components.
 
 Keep your components separate and design them before adding in your Router.
+
 You can test them individually before adding in the Router (Part 2).
 
 Create 3 page components to display data from 3 API endpoints:
